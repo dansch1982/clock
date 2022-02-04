@@ -30,39 +30,183 @@ body #clock #numbers {
   justify-content: center;
 }
 body #clock #numbers :nth-child(1) {
-  transform: rotate(30deg);
+  transform: rotate(6deg);
 }
 body #clock #numbers :nth-child(2) {
-  transform: rotate(60deg);
+  transform: rotate(12deg);
 }
 body #clock #numbers :nth-child(3) {
-  transform: rotate(90deg);
+  transform: rotate(18deg);
 }
 body #clock #numbers :nth-child(4) {
-  transform: rotate(120deg);
+  transform: rotate(24deg);
 }
 body #clock #numbers :nth-child(5) {
-  transform: rotate(150deg);
+  transform: rotate(30deg);
 }
 body #clock #numbers :nth-child(6) {
-  transform: rotate(180deg);
+  transform: rotate(36deg);
 }
 body #clock #numbers :nth-child(7) {
-  transform: rotate(210deg);
+  transform: rotate(42deg);
 }
 body #clock #numbers :nth-child(8) {
-  transform: rotate(240deg);
+  transform: rotate(48deg);
 }
 body #clock #numbers :nth-child(9) {
-  transform: rotate(270deg);
+  transform: rotate(54deg);
 }
 body #clock #numbers :nth-child(10) {
-  transform: rotate(300deg);
+  transform: rotate(60deg);
 }
 body #clock #numbers :nth-child(11) {
-  transform: rotate(330deg);
+  transform: rotate(66deg);
 }
 body #clock #numbers :nth-child(12) {
+  transform: rotate(72deg);
+}
+body #clock #numbers :nth-child(13) {
+  transform: rotate(78deg);
+}
+body #clock #numbers :nth-child(14) {
+  transform: rotate(84deg);
+}
+body #clock #numbers :nth-child(15) {
+  transform: rotate(90deg);
+}
+body #clock #numbers :nth-child(16) {
+  transform: rotate(96deg);
+}
+body #clock #numbers :nth-child(17) {
+  transform: rotate(102deg);
+}
+body #clock #numbers :nth-child(18) {
+  transform: rotate(108deg);
+}
+body #clock #numbers :nth-child(19) {
+  transform: rotate(114deg);
+}
+body #clock #numbers :nth-child(20) {
+  transform: rotate(120deg);
+}
+body #clock #numbers :nth-child(21) {
+  transform: rotate(126deg);
+}
+body #clock #numbers :nth-child(22) {
+  transform: rotate(132deg);
+}
+body #clock #numbers :nth-child(23) {
+  transform: rotate(138deg);
+}
+body #clock #numbers :nth-child(24) {
+  transform: rotate(144deg);
+}
+body #clock #numbers :nth-child(25) {
+  transform: rotate(150deg);
+}
+body #clock #numbers :nth-child(26) {
+  transform: rotate(156deg);
+}
+body #clock #numbers :nth-child(27) {
+  transform: rotate(162deg);
+}
+body #clock #numbers :nth-child(28) {
+  transform: rotate(168deg);
+}
+body #clock #numbers :nth-child(29) {
+  transform: rotate(174deg);
+}
+body #clock #numbers :nth-child(30) {
+  transform: rotate(180deg);
+}
+body #clock #numbers :nth-child(31) {
+  transform: rotate(186deg);
+}
+body #clock #numbers :nth-child(32) {
+  transform: rotate(192deg);
+}
+body #clock #numbers :nth-child(33) {
+  transform: rotate(198deg);
+}
+body #clock #numbers :nth-child(34) {
+  transform: rotate(204deg);
+}
+body #clock #numbers :nth-child(35) {
+  transform: rotate(210deg);
+}
+body #clock #numbers :nth-child(36) {
+  transform: rotate(216deg);
+}
+body #clock #numbers :nth-child(37) {
+  transform: rotate(222deg);
+}
+body #clock #numbers :nth-child(38) {
+  transform: rotate(228deg);
+}
+body #clock #numbers :nth-child(39) {
+  transform: rotate(234deg);
+}
+body #clock #numbers :nth-child(40) {
+  transform: rotate(240deg);
+}
+body #clock #numbers :nth-child(41) {
+  transform: rotate(246deg);
+}
+body #clock #numbers :nth-child(42) {
+  transform: rotate(252deg);
+}
+body #clock #numbers :nth-child(43) {
+  transform: rotate(258deg);
+}
+body #clock #numbers :nth-child(44) {
+  transform: rotate(264deg);
+}
+body #clock #numbers :nth-child(45) {
+  transform: rotate(270deg);
+}
+body #clock #numbers :nth-child(46) {
+  transform: rotate(276deg);
+}
+body #clock #numbers :nth-child(47) {
+  transform: rotate(282deg);
+}
+body #clock #numbers :nth-child(48) {
+  transform: rotate(288deg);
+}
+body #clock #numbers :nth-child(49) {
+  transform: rotate(294deg);
+}
+body #clock #numbers :nth-child(50) {
+  transform: rotate(300deg);
+}
+body #clock #numbers :nth-child(51) {
+  transform: rotate(306deg);
+}
+body #clock #numbers :nth-child(52) {
+  transform: rotate(312deg);
+}
+body #clock #numbers :nth-child(53) {
+  transform: rotate(318deg);
+}
+body #clock #numbers :nth-child(54) {
+  transform: rotate(324deg);
+}
+body #clock #numbers :nth-child(55) {
+  transform: rotate(330deg);
+}
+body #clock #numbers :nth-child(56) {
+  transform: rotate(336deg);
+}
+body #clock #numbers :nth-child(57) {
+  transform: rotate(342deg);
+}
+body #clock #numbers :nth-child(58) {
+  transform: rotate(348deg);
+}
+body #clock #numbers :nth-child(59) {
+  transform: rotate(354deg);
+}
+body #clock #numbers :nth-child(60) {
   transform: rotate(360deg);
 }
 body #clock #numbers span {
@@ -77,7 +221,7 @@ body #clock #numbers span {
   width: -moz-fit-content;
   width: fit-content;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  font-size: min(7vw, 7vh);
+  font-size: min(6vw, 6vh);
 }
 body #clock #seconds {
   z-index: 3;

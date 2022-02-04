@@ -2,9 +2,9 @@ class Clock {
     constructor(date) {
         this.seconds = date.getSeconds() * 6
         this.#setRotation("seconds")
-        this.minutes = date.getMinutes() * 6
+        this.minutes = date.getMinutes() * 6 + date.getSeconds() / 10
         this.#setRotation("minutes")
-        this.hours = date.getHours() * 30
+        this.hours = date.getHours() * 30 + date.getMinutes() / 2
         this.#setRotation("hours")
     }
     #setRotation(hand) {
@@ -12,17 +12,13 @@ class Clock {
         const deg = this[hand]
         element.style.transform = `rotate(${deg}deg)`
     }
-    #tick() {
+    #tick() { // fix ticking so everything tick every time
         this.seconds += 6
         this.#setRotation("seconds")
-        if (this.seconds % 360 === 0) {
-            this.minutes += 6
-            this.#setRotation("minutes")
-            if (this.minutes % 360 === 0) {
-                this.hours += 30
-                this.#setRotation("hours")                
-            }
-        }
+        this.minutes += 6/60
+        this.#setRotation("minutes")
+        this.hours += 30/3600
+        this.#setRotation("hours")
     }
     start() {
         setInterval(() => {
