@@ -20,14 +20,22 @@ body #clock {
 }
 body #clock #seconds {
   z-index: 3;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  transition: transform 200ms ease-in-out;
 }
 body #clock #minutes {
   z-index: 2;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  transition: transform 200ms ease-in-out;
 }
 body #clock #hours {
   z-index: 1;
-}
-body #clock #seconds, body #clock #minutes, body #clock #hours {
   position: absolute;
   height: 100%;
   width: 100%;
