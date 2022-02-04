@@ -15,26 +15,45 @@ body #clock {
   width: min(80vw, 80vh);
   overflow: hidden;
   background-color: wheat;
-  border: 5px solid black;
+  border: min(1vw, 1vh) solid black;
   border-radius: 50%;
+}
+body #clock #seconds {
+  z-index: 3;
+}
+body #clock #minutes {
+  z-index: 2;
+}
+body #clock #hours {
+  z-index: 1;
 }
 body #clock #seconds, body #clock #minutes, body #clock #hours {
   position: absolute;
-  display: flex;
-  flex-direction: column;
   height: 100%;
   width: 100%;
+  display: flex;
   transition: transform 200ms ease-in-out;
 }
-body #clock #seconds :nth-child(1), body #clock #minutes :nth-child(1), body #clock #hours :nth-child(1) {
-  background-color: black;
-  height: 60%;
-}
-body #clock #seconds :nth-child(2), body #clock #minutes :nth-child(2), body #clock #hours :nth-child(2) {
-  background-color: rgba(0, 0, 0, 0);
-  flex-grow: 1;
-}
-body #clock #seconds .line, body #clock #minutes .line, body #clock #hours .line {
+body #clock #seconds .hand, body #clock #minutes .hand, body #clock #hours .hand {
   margin: auto;
-  width: 10px;
+  background-color: black;
+  width: min(1.5vw, 1.5vh);
+  height: 50%;
+  margin-bottom: 50%;
+}
+body #clock #seconds .seconds, body #clock #minutes .seconds, body #clock #hours .seconds {
+  background-color: red;
+  width: min(0.75vw, 0.75vh);
+  height: 50%;
+  margin-bottom: 45%;
+}
+body #clock #seconds .minutes, body #clock #minutes .minutes, body #clock #hours .minutes {
+  width: min(1vw, 1vh);
+  height: 50%;
+  margin-bottom: 45%;
+}
+body #clock #seconds .hours, body #clock #minutes .hours, body #clock #hours .hours {
+  width: min(2vw, 2vh);
+  height: 40%;
+  margin-bottom: 45%;
 }/*# sourceMappingURL=style.css.map */
