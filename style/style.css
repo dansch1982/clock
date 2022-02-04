@@ -1,0 +1,40 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+}
+body #clock {
+  position: relative;
+  margin: auto;
+  height: min(80vw, 80vh);
+  width: min(80vw, 80vh);
+  overflow: hidden;
+  background-color: wheat;
+  border: 5px solid black;
+  border-radius: 50%;
+}
+body #clock #seconds, body #clock #minutes, body #clock #hours {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  transition: transform 200ms ease-in-out;
+}
+body #clock #seconds :nth-child(1), body #clock #minutes :nth-child(1), body #clock #hours :nth-child(1) {
+  background-color: black;
+  height: 60%;
+}
+body #clock #seconds :nth-child(2), body #clock #minutes :nth-child(2), body #clock #hours :nth-child(2) {
+  background-color: rgba(0, 0, 0, 0);
+  flex-grow: 1;
+}
+body #clock #seconds .line, body #clock #minutes .line, body #clock #hours .line {
+  margin: auto;
+  width: 10px;
+}/*# sourceMappingURL=style.css.map */
