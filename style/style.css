@@ -100,7 +100,7 @@ body #clock #minutes {
   height: 100%;
   width: 100%;
   display: flex;
-  transition: transform 200ms ease-in-out;
+  transition: transform 500ms linear;
 }
 body #clock #minutes .pointer {
   margin: auto;
@@ -115,7 +115,7 @@ body #clock #hours {
   height: 100%;
   width: 100%;
   display: flex;
-  transition: transform 200ms ease-in-out;
+  transition: transform 500ms linear;
 }
 body #clock #hours .pointer {
   margin: auto;
