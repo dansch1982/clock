@@ -21,6 +21,7 @@ class Clock {
     constructor(date) {
         this.date = date;
         this.offset = this.date - new Date()
+
         this.secondsElement = document.querySelector(`.seconds`)
         this.minutesElement = document.querySelector(`.minutes`)
         this.hoursElement = document.querySelector(`.hours`)
@@ -30,7 +31,6 @@ class Clock {
         this.hours = (this.date.getHours() * (360 / 12)) + (this.date.getMinutes() * (360/12/60));
 
         this.#updateHands();
-
     };
     #updateHands() {
         this.secondsElement.style.transform = `rotate(${this.seconds}deg)`
@@ -56,8 +56,5 @@ class Clock {
     };
 }
 const date = new Date();
-/* date.setSeconds(0) */
-date.setMinutes(date.getMinutes() + 30)
-date.setHours(date.getHours() - 2)
 const clock = new Clock(date)
 clock.start();
