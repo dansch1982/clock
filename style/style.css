@@ -1,267 +1,369 @@
 * {
-  padding: 0;
   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-  display: flex;
-  width: 100vw;
-  height: 100vh;
+  background-color: whitesmoke;
 }
-body #clock {
+body .clock {
+  /* transform: scale3d(1, 1, 1) rotateX(50deg) rotateY(50deg) rotateZ(0deg) translate3d(0px, 0px, 0px) skew(0deg, 0deg); */
   position: relative;
   margin: auto;
-  height: min(80vw, 80vh);
   width: min(80vw, 80vh);
-  overflow: hidden;
+  height: min(80vw, 80vh);
+}
+body .clock .face {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
   background-color: wheat;
   border: min(1vw, 1vh) solid black;
   border-radius: 50%;
 }
-body #clock #numbers {
+body .clock .face > :nth-child(1n) {
   position: absolute;
   height: 100%;
-  width: 100%;
-  display: flex;
-  transition: transform 200ms ease-in-out;
-  justify-content: center;
 }
-body #clock #numbers :nth-child(1) {
+body .clock .face > :nth-child(1) {
+  transform: rotate(0deg);
+}
+body .clock .face > :nth-child(2) {
   transform: rotate(6deg);
 }
-body #clock #numbers :nth-child(2) {
+body .clock .face > :nth-child(3) {
   transform: rotate(12deg);
 }
-body #clock #numbers :nth-child(3) {
+body .clock .face > :nth-child(4) {
   transform: rotate(18deg);
 }
-body #clock #numbers :nth-child(4) {
+body .clock .face > :nth-child(5) {
   transform: rotate(24deg);
 }
-body #clock #numbers :nth-child(5) {
+body .clock .face > :nth-child(6) {
   transform: rotate(30deg);
 }
-body #clock #numbers :nth-child(6) {
+body .clock .face > :nth-child(7) {
   transform: rotate(36deg);
 }
-body #clock #numbers :nth-child(7) {
+body .clock .face > :nth-child(8) {
   transform: rotate(42deg);
 }
-body #clock #numbers :nth-child(8) {
+body .clock .face > :nth-child(9) {
   transform: rotate(48deg);
 }
-body #clock #numbers :nth-child(9) {
+body .clock .face > :nth-child(10) {
   transform: rotate(54deg);
 }
-body #clock #numbers :nth-child(10) {
+body .clock .face > :nth-child(11) {
   transform: rotate(60deg);
 }
-body #clock #numbers :nth-child(11) {
+body .clock .face > :nth-child(12) {
   transform: rotate(66deg);
 }
-body #clock #numbers :nth-child(12) {
+body .clock .face > :nth-child(13) {
   transform: rotate(72deg);
 }
-body #clock #numbers :nth-child(13) {
+body .clock .face > :nth-child(14) {
   transform: rotate(78deg);
 }
-body #clock #numbers :nth-child(14) {
+body .clock .face > :nth-child(15) {
   transform: rotate(84deg);
 }
-body #clock #numbers :nth-child(15) {
+body .clock .face > :nth-child(16) {
   transform: rotate(90deg);
 }
-body #clock #numbers :nth-child(16) {
+body .clock .face > :nth-child(17) {
   transform: rotate(96deg);
 }
-body #clock #numbers :nth-child(17) {
+body .clock .face > :nth-child(18) {
   transform: rotate(102deg);
 }
-body #clock #numbers :nth-child(18) {
+body .clock .face > :nth-child(19) {
   transform: rotate(108deg);
 }
-body #clock #numbers :nth-child(19) {
+body .clock .face > :nth-child(20) {
   transform: rotate(114deg);
 }
-body #clock #numbers :nth-child(20) {
+body .clock .face > :nth-child(21) {
   transform: rotate(120deg);
 }
-body #clock #numbers :nth-child(21) {
+body .clock .face > :nth-child(22) {
   transform: rotate(126deg);
 }
-body #clock #numbers :nth-child(22) {
+body .clock .face > :nth-child(23) {
   transform: rotate(132deg);
 }
-body #clock #numbers :nth-child(23) {
+body .clock .face > :nth-child(24) {
   transform: rotate(138deg);
 }
-body #clock #numbers :nth-child(24) {
+body .clock .face > :nth-child(25) {
   transform: rotate(144deg);
 }
-body #clock #numbers :nth-child(25) {
+body .clock .face > :nth-child(26) {
   transform: rotate(150deg);
 }
-body #clock #numbers :nth-child(26) {
+body .clock .face > :nth-child(27) {
   transform: rotate(156deg);
 }
-body #clock #numbers :nth-child(27) {
+body .clock .face > :nth-child(28) {
   transform: rotate(162deg);
 }
-body #clock #numbers :nth-child(28) {
+body .clock .face > :nth-child(29) {
   transform: rotate(168deg);
 }
-body #clock #numbers :nth-child(29) {
+body .clock .face > :nth-child(30) {
   transform: rotate(174deg);
 }
-body #clock #numbers :nth-child(30) {
+body .clock .face > :nth-child(31) {
   transform: rotate(180deg);
 }
-body #clock #numbers :nth-child(31) {
+body .clock .face > :nth-child(32) {
   transform: rotate(186deg);
 }
-body #clock #numbers :nth-child(32) {
+body .clock .face > :nth-child(33) {
   transform: rotate(192deg);
 }
-body #clock #numbers :nth-child(33) {
+body .clock .face > :nth-child(34) {
   transform: rotate(198deg);
 }
-body #clock #numbers :nth-child(34) {
+body .clock .face > :nth-child(35) {
   transform: rotate(204deg);
 }
-body #clock #numbers :nth-child(35) {
+body .clock .face > :nth-child(36) {
   transform: rotate(210deg);
 }
-body #clock #numbers :nth-child(36) {
+body .clock .face > :nth-child(37) {
   transform: rotate(216deg);
 }
-body #clock #numbers :nth-child(37) {
+body .clock .face > :nth-child(38) {
   transform: rotate(222deg);
 }
-body #clock #numbers :nth-child(38) {
+body .clock .face > :nth-child(39) {
   transform: rotate(228deg);
 }
-body #clock #numbers :nth-child(39) {
+body .clock .face > :nth-child(40) {
   transform: rotate(234deg);
 }
-body #clock #numbers :nth-child(40) {
+body .clock .face > :nth-child(41) {
   transform: rotate(240deg);
 }
-body #clock #numbers :nth-child(41) {
+body .clock .face > :nth-child(42) {
   transform: rotate(246deg);
 }
-body #clock #numbers :nth-child(42) {
+body .clock .face > :nth-child(43) {
   transform: rotate(252deg);
 }
-body #clock #numbers :nth-child(43) {
+body .clock .face > :nth-child(44) {
   transform: rotate(258deg);
 }
-body #clock #numbers :nth-child(44) {
+body .clock .face > :nth-child(45) {
   transform: rotate(264deg);
 }
-body #clock #numbers :nth-child(45) {
+body .clock .face > :nth-child(46) {
   transform: rotate(270deg);
 }
-body #clock #numbers :nth-child(46) {
+body .clock .face > :nth-child(47) {
   transform: rotate(276deg);
 }
-body #clock #numbers :nth-child(47) {
+body .clock .face > :nth-child(48) {
   transform: rotate(282deg);
 }
-body #clock #numbers :nth-child(48) {
+body .clock .face > :nth-child(49) {
   transform: rotate(288deg);
 }
-body #clock #numbers :nth-child(49) {
+body .clock .face > :nth-child(50) {
   transform: rotate(294deg);
 }
-body #clock #numbers :nth-child(50) {
+body .clock .face > :nth-child(51) {
   transform: rotate(300deg);
 }
-body #clock #numbers :nth-child(51) {
+body .clock .face > :nth-child(52) {
   transform: rotate(306deg);
 }
-body #clock #numbers :nth-child(52) {
+body .clock .face > :nth-child(53) {
   transform: rotate(312deg);
 }
-body #clock #numbers :nth-child(53) {
+body .clock .face > :nth-child(54) {
   transform: rotate(318deg);
 }
-body #clock #numbers :nth-child(54) {
+body .clock .face > :nth-child(55) {
   transform: rotate(324deg);
 }
-body #clock #numbers :nth-child(55) {
+body .clock .face > :nth-child(56) {
   transform: rotate(330deg);
 }
-body #clock #numbers :nth-child(56) {
+body .clock .face > :nth-child(57) {
   transform: rotate(336deg);
 }
-body #clock #numbers :nth-child(57) {
+body .clock .face > :nth-child(58) {
   transform: rotate(342deg);
 }
-body #clock #numbers :nth-child(58) {
+body .clock .face > :nth-child(59) {
   transform: rotate(348deg);
 }
-body #clock #numbers :nth-child(59) {
+body .clock .face > :nth-child(60) {
   transform: rotate(354deg);
 }
-body #clock #numbers :nth-child(60) {
-  transform: rotate(360deg);
+body .clock .face article {
+  font-family: monospace;
+  font-size: min(4vw, 4vh);
 }
-body #clock #numbers span {
-  margin: auto;
-  background-color: unset;
-  width: min(2vw, 2vh);
-  height: 50%;
-  margin-bottom: 50%;
+body .clock .numbers {
   position: absolute;
-  transform-origin: bottom center;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+}
+body .clock .numbers > :nth-child(1n) {
+  position: absolute;
+  height: 100%;
+}
+body .clock .numbers > :nth-child(1) {
+  transform: rotate(0deg);
+}
+body .clock .numbers > :nth-child(1) > :nth-child(1n) {
+  transform: rotate(0deg);
+  display: inline-block;
+}
+body .clock .numbers > :nth-child(2) {
+  transform: rotate(30deg);
+}
+body .clock .numbers > :nth-child(2) > :nth-child(1n) {
+  transform: rotate(-30deg);
+  display: inline-block;
+}
+body .clock .numbers > :nth-child(3) {
+  transform: rotate(60deg);
+}
+body .clock .numbers > :nth-child(3) > :nth-child(1n) {
+  transform: rotate(-60deg);
+  display: inline-block;
+}
+body .clock .numbers > :nth-child(4) {
+  transform: rotate(90deg);
+}
+body .clock .numbers > :nth-child(4) > :nth-child(1n) {
+  transform: rotate(-90deg);
+  display: inline-block;
+}
+body .clock .numbers > :nth-child(5) {
+  transform: rotate(120deg);
+}
+body .clock .numbers > :nth-child(5) > :nth-child(1n) {
+  transform: rotate(-120deg);
+  display: inline-block;
+}
+body .clock .numbers > :nth-child(6) {
+  transform: rotate(150deg);
+}
+body .clock .numbers > :nth-child(6) > :nth-child(1n) {
+  transform: rotate(-150deg);
+  display: inline-block;
+}
+body .clock .numbers > :nth-child(7) {
+  transform: rotate(180deg);
+}
+body .clock .numbers > :nth-child(7) > :nth-child(1n) {
+  transform: rotate(-180deg);
+  display: inline-block;
+}
+body .clock .numbers > :nth-child(8) {
+  transform: rotate(210deg);
+}
+body .clock .numbers > :nth-child(8) > :nth-child(1n) {
+  transform: rotate(-210deg);
+  display: inline-block;
+}
+body .clock .numbers > :nth-child(9) {
+  transform: rotate(240deg);
+}
+body .clock .numbers > :nth-child(9) > :nth-child(1n) {
+  transform: rotate(-240deg);
+  display: inline-block;
+}
+body .clock .numbers > :nth-child(10) {
+  transform: rotate(270deg);
+}
+body .clock .numbers > :nth-child(10) > :nth-child(1n) {
+  transform: rotate(-270deg);
+  display: inline-block;
+}
+body .clock .numbers > :nth-child(11) {
+  transform: rotate(300deg);
+}
+body .clock .numbers > :nth-child(11) > :nth-child(1n) {
+  transform: rotate(-300deg);
+  display: inline-block;
+}
+body .clock .numbers > :nth-child(12) {
+  transform: rotate(330deg);
+}
+body .clock .numbers > :nth-child(12) > :nth-child(1n) {
+  transform: rotate(-330deg);
+  display: inline-block;
+}
+body .clock .numbers article {
+  padding-top: 3%;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   font-size: min(6vw, 6vh);
 }
-body #clock #seconds {
+body .clock .hands {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+}
+body .clock .hands > :nth-child(1n) {
+  position: absolute;
+  height: 100%;
+}
+body .clock .hands .seconds {
   z-index: 3;
-  position: absolute;
+  padding-top: 13%;
+  width: min(1vw, 1vh);
   height: 100%;
-  width: 100%;
-  display: flex;
-  transition: transform 200ms ease-in-out;
 }
-body #clock #seconds .pointer {
-  margin: auto;
+body .clock .hands .seconds > :first-child {
+  height: 47%;
   background-color: red;
-  width: min(0.75vw, 0.75vh);
-  height: 50%;
-  margin-bottom: 45%;
+  position: absolute;
+  width: 100%;
+  border-top-left-radius: 50%;
+  border-top-right-radius: 50%;
 }
-body #clock #minutes {
+body .clock .hands .minutes {
   z-index: 2;
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  display: flex;
-  transition: transform 500ms linear;
-}
-body #clock #minutes .pointer {
-  margin: auto;
-  background-color: black;
+  transition: transform 1000ms linear;
+  padding-top: 13%;
   width: min(1.5vw, 1.5vh);
-  height: 50%;
-  margin-bottom: 45%;
-}
-body #clock #hours {
-  z-index: 1;
-  position: absolute;
   height: 100%;
-  width: 100%;
-  display: flex;
-  transition: transform 500ms linear;
 }
-body #clock #hours .pointer {
-  margin: auto;
+body .clock .hands .minutes > :first-child {
+  height: 47%;
   background-color: black;
-  width: min(2.5vw, 2.5vh);
+  position: absolute;
+  width: 100%;
+  border-top-left-radius: 50%;
+  border-top-right-radius: 50%;
+}
+body .clock .hands .hours {
+  z-index: 1;
+  transition: transform 1000ms linear;
+  padding-top: 20%;
+  width: min(2vw, 2vh);
+  height: 100%;
+}
+body .clock .hands .hours > :first-child {
   height: 40%;
-  margin-bottom: 45%;
+  background-color: black;
+  position: absolute;
+  width: 100%;
+  border-top-left-radius: 50%;
+  border-top-right-radius: 50%;
 }/*# sourceMappingURL=style.css.map */
